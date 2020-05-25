@@ -1,9 +1,13 @@
 import express from 'express';
+import path from 'path';
 
 const app = express();
 const port = 3000;
+
+app.use(express.static(path.join(__dirname, '..', 'public', 'appBuild')));
+
 app.get('/', (req, res) => {
-  res.send('The sedulous hyena ate the antelope!');
+  res.sendFile(path.join(__dirname, '..','public', 'appBuild', 'index.html'));
 });
 app.listen(port, err => {
   if (err) {
