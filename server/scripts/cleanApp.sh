@@ -1,3 +1,4 @@
+#!/bin/bash
 serverAppBuildLocation='../public/appBuild'
 # Enable extglob for group delete
 shopt -s extglob

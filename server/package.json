@@ -4,8 +4,8 @@
   "description": "Fam Tree Front End",
   "main": "index.js",
   "scripts": {
-    "clean:app": "cd bash && ./cleanApp.sh",
-    "build:app": "npm run clean:app && cd ../app && npm install && npm run build && cp -R build/. ../server/public/appBuild",
+    "clean:app": "cd scripts && ./cleanApp.sh",
+    "build:app": "npm run clean:app && cd ../app && npm run build && cp -R build/. ../server/public/appBuild",
     "start": "tsc && node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
